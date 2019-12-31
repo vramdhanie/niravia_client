@@ -2,18 +2,18 @@ import React from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "../../styles/themes";
 
-function App({ className }) {
+function Home({ className }) {
   return (
     <ThemeProvider theme={lightTheme}>
       <div className={className}>
-        <header className="App-header">Realm of Niravia</header>
+        <header className="home-header">Realm of Niravia</header>
       </div>
     </ThemeProvider>
   );
 }
 
-export default styled(App)`
-  .App-header {
+export default styled(Home)`
+  .home-header {
     background-color: #282c34;
     min-height: 100vh;
     display: flex;
