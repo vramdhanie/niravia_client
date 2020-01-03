@@ -2,6 +2,9 @@
 
 _React client for the Realm of Niravia game_
 
+## Introduction
+ Realm of Niravia is a card based multiplayer adventure game.
+
 ## License
 
 Realm of Niravia is [MIT Licensed](LICENSE).
