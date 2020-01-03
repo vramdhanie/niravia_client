@@ -1,4 +1,4 @@
-import baseStyled, { ThemedStyledInterface } from "styled-components";
+import baseStyled from "styled-components";
 
 export const lightTheme = {
   all: {
