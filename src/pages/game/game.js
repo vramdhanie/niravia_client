@@ -9,16 +9,16 @@ const Game = ({ className }) => {
   return (
     <div className={className}>
       <div className="player1">
-        <PlayerBoard />
+        <PlayerBoard name="Nirav" hp={100} at={120} />
       </div>
       <div className="player2">
-        <PlayerBoard />
+        <PlayerBoard name="Sam" hp={100} at={120} />
       </div>
       <div className="player3">
-        <PlayerBoard />
+        <PlayerBoard name="Mary" hp={100} at={120} />
       </div>
       <div className="player4">
-        <PlayerBoard />
+        <PlayerBoard name="Jane" hp={100} at={120} />
       </div>
       <div className="gameArea">
         Play the Game
