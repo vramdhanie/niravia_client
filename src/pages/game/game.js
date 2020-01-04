@@ -5,20 +5,20 @@ import Card from "../../components/card";
 import PlayerBoard from "../../components/playerBoard";
 import GameMenu from "../../components/gameMenu";
 
-const Game = ({ className }) => {
+const Game = ({ className, comps }) => {
   return (
     <div className={className}>
       <div className="player1">
-        <PlayerBoard name="Nirav" hp={100} at={120} />
+        <PlayerBoard name="Nirav" hp={100} at={120} sh={50} />
       </div>
       <div className="player2">
-        <PlayerBoard name="Sam" hp={100} at={120} />
+        <PlayerBoard name="Sam" hp={100} at={120} sh={50} />
       </div>
       <div className="player3">
-        <PlayerBoard name="Mary" hp={100} at={120} />
+        <PlayerBoard name="Mary" hp={100} at={120} sh={50} />
       </div>
       <div className="player4">
-        <PlayerBoard name="Jane" hp={100} at={120} />
+        <PlayerBoard name="Jane" hp={100} at={120} sh={50} />
       </div>
       <div className="gameArea">
         Play the Game

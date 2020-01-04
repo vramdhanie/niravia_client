@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-const PlayerBoard = ({ className, name, hp, at }) => {
+const PlayerBoard = ({ className, name, hp, at, sh }) => {
   return (
     <div className={className}>
       <h1>{name}</h1>
       <div className="profile">
         <div>HP: {hp}</div>
         <div>AT: {at}</div>
+        <div>SH: {sh}</div>
       </div>
     </div>
   );
@@ -33,5 +34,9 @@ export default styled(PlayerBoard)`
   .profile {
     display: flex;
     background: var(--primary);
+
+    div {
+      margin-left: 4px;
+    }
   }
 `;

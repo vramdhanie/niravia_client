@@ -23,7 +23,8 @@ const Card = ({ className }) => {
 export default styled(Card)`
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  width: 175px;
+  max-width: 175px;
+  max-height: 250px;
   height: 250px;
   background: var(--primaryDark);
   display: flex;
