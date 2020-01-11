@@ -5,7 +5,14 @@ import Card from "../../components/card";
 import PlayerBoard from "../../components/playerBoard";
 import GameMenu from "../../components/gameMenu";
 
+import { useStore } from "../../store";
+
 const Game = ({ className, comps }) => {
+  const [
+    {
+      game: { deck }
+    }
+  ] = useStore();
   return (
     <div className={className}>
       <div className="player1">
@@ -22,7 +29,9 @@ const Game = ({ className, comps }) => {
       </div>
       <div className="gameArea">
         Play the Game
-        <Card />
+        {deck.map((_, i) => (
+          <Card key={i} />
+        ))}
       </div>
       <div className="gameLeft">
         <GameMenu />
@@ -60,6 +69,7 @@ export default styled(Game)`
   }
   .gameArea {
     grid-area: gamecenter;
+    display: flex;
   }
 
   .gameLeft {
