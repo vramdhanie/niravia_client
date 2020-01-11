@@ -2,6 +2,8 @@ import * as GAME from "./game";
 import * as PLAYER from "./player";
 import * as types from "../actions/types";
 
+console.log(types);
+
 const createReducer = handlers => (state, action) => {
   if (!handlers.hasOwnProperty(action.type)) {
     return state;

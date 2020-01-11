@@ -1,4 +1,4 @@
-import React, { CreateContext, useContext, useReducer } from "react";
+import React, { createContext, useContext, useReducer } from "react";
 
 export const GameContext = createContext();
 
@@ -10,3 +10,7 @@ export const StoreProvider = ({ reducer, initialState, children }) => (
 );
 
 export const useStore = () => useContext(GameContext);
+
+/**
+ * Follow this tutorial for organizing context: https://github.com/vanderleisilva/react-context
+ */

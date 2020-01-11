@@ -5,9 +5,13 @@ import Help from "../pages/help/help";
 import Game from "../pages/game/game";
 import Lobby from "../pages/lobby/lobby";
 
+import { StoreProvider } from "../store";
+import reducers from "../reducers";
+import initialState from "../store/initialState";
+
 const App = () => {
   return (
-    <>
+    <StoreProvider initialState={initialState} reducer={reducers}>
       <Route exact path="/">
         <Home />
       </Route>
@@ -20,7 +24,7 @@ const App = () => {
       <Route path="/help">
         <Help />
       </Route>
-    </>
+    </StoreProvider>
   );
 };
 
